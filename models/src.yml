@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+    - name: inequality
+      database: Snowflake
+      schema: OECD
+      tables:
+        - name: HOURSPOV
+        - name: TIMEUSE
+        - name: NRR
+        - name: INCOMEDISTRO
+        - name: WELLBEING
+    - name: education
+      database: oracle
+      schema: EDUCATION
+      tables:
+        - name: EAG_EA_SKILLS
+        - name: EDUCATION_G7

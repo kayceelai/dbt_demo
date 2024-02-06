@@ -12,5 +12,8 @@ target-path: target
 clean-targets: [target, dbt_packages]
 models:
   default:
-    example: {+materialized: view}
+    inequality: {+materialized: view}
+    education: {+materialized: view}
+    dim: {+materialized: view}
+    analysis: {+materialized: view}
 quoting: {identifier: true, schema: true, database: false}
